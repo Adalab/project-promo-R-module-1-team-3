@@ -1,23 +1,26 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 /* 1 Rem son 10 px*/
 
+/* Se vuelven a poner las fuentes a 16px en body para respetar navegador ver siguiente post para más info
+/* https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/ */
+
+body {
+  font-size: 1.6rem;
+}
 
 :root {
-    --black: #000;
-    --light-grey-blue: rgba(184, 184, 185, 0.1);
-    --black-8: rgba(0, 0, 0, 0.08);
-    --aqua: #14d9c4;
-    --blue-green: #099d8d;
-    --white: #fff;
-    --cool-grey: #b8b8b9;
-  }
-  
+  --black: #000;
+  --light-grey-blue: rgba(184, 184, 185, 0.1);
+  --black-8: rgba(0, 0, 0, 0.08);
+  --aqua: #14d9c4;
+  --blue-green: #099d8d;
+  --white: #fff;
+  --cool-grey: #b8b8b9;
+}
 
-
-
-  /*
+/*
 font-family: 'Open Sans', sans-serif;
 font-family: 'Rubik', sans-serif;
 */
@@ -25,101 +28,151 @@ font-family: 'Rubik', sans-serif;
 /*HEADER*/
 
 .header {
-    background-color:blue;
-    font-family: 'Rubik', sans-serif;
+  height: 105px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik-Medium", sans-serif;
+  color: var(--white);
+  background-color: var(--blue-green);
+  opacity: 0.95;
+  position: absolute;
+  top: 0;
 }
-
-
-
-
-
+.header-title {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  background-color: var(--aqua);
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.list-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-link {
+  color: var(--white);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
 
 /*HERO*/
 
+.hero {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.39;
+  color: var(--black);
+}
 
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 362px;
+}
 
+.hero-image {
+  height: 316px;
+  width: 100%;
+  /*color image repeat attachment position*/
+  background: var(--aqua) url(../images/hero-image.jpg) no-repeat scroll center;
+  background-size: cover;
+}
 
+.hero-p {
+  background-color: var(--white);
+  width: 260px;
+  margin-top: -34px;
+  /* top | right | bottom | left */
+  padding: 14px 15px 16px 15px;
+}
 
 /*--------TEAM--------*/
 
 /*afecta a todas */
 
 .container {
-    margin-left:2%;
-    margin-right:2%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .team .container {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .team-article {
-    display:flex;
-    flex-direction: column;
-    margin-top:10%;
-    margin-bottom:10%;
-    gap:2rem; 
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  gap: 2rem;
 }
 .team-p {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
-
 
 /*--caja1--*/
 
 .team-container-white {
-    background-color: var(--white);
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .team-h2 {
-    color: var(--aqua);
-    font-family: 'Rubik', sans-serif; /*DUDA:como se si esta cogiendo medium?*/
-    font-size:2.4rem;
-
+  color: var(--aqua);
+  font-family: "Rubik", sans-serif; /*DUDA:como se si esta cogiendo medium?*/
+  font-size: 2.4rem;
 }
 /*caja2 (esta dentro de caja1)*/
 .team-square {
-    width:30px;
-    height: 30px;
-    transform:translate(0,50%) rotate(45deg);
-    z-index: 1;
-    background-color: var(--white);
+  width: 30px;
+  height: 30px;
+  transform: translate(0, 50%) rotate(45deg);
+  z-index: 1;
+  background-color: var(--white);
 }
 
 /*--caja3--*/
 
 .team-container-grey {
-    background-color: var(--cool-grey);
-    
+  background-color: var(--cool-grey);
 }
 .team-h3 {
-    color: var(--blue-green);
-    font-family: 'Rubik', sans-serif; /*DUDA:como se si esta cogiendo medium?*/
-    font-size:2.2rem;
-
+  color: var(--blue-green);
+  font-family: "Rubik", sans-serif; /*DUDA:como se si esta cogiendo medium?*/
+  font-size: 2.2rem;
 }
 /*--------fin TEAM--------*/
 
 /*-----------------------ABOUT US---------------------------*/
 .about-us-h2 {
-    color: var(--blue-green);
-    font-size: 2.4rem;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    line-height: 1.88;
-    margin-top: 3rem;
-    text-align: center;
-    text-transform: uppercase;
+  color: var(--blue-green);
+  font-size: 2.4rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  line-height: 1.88;
+  margin-top: 3rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 .about-us-article {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    margin-top: 3rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 3rem;
 }
 .article-figure {
     width: 18rem;
@@ -136,9 +189,9 @@ font-family: 'Rubik', sans-serif;
     border: solid 0.5rem rgba(0, 0, 0, 0.08);
 
 }
-.article-text{
-    text-align: center;
-    margin-top: 1.5rem;
+.article-text {
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 .article-text-h3{
