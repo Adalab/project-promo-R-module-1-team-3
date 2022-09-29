@@ -124,16 +124,16 @@ font-family: 'Rubik', sans-serif;
 .article-figure {
     width: 18rem;
     height: 18rem;
-    background-color: var(--cool-grey);
-    border-radius: 5%;
+    margin: 0 5.5rem 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .article-figure__image {
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     border-radius: 5%;
+    border: solid 0.5rem rgba(0, 0, 0, 0.08);
 
 }
 .article-text{
@@ -147,7 +147,7 @@ font-family: 'Rubik', sans-serif;
     font-size: 2rem;
     font-style: normal;
     line-height: 2.25;
-    margin-top: 1.5;
+    margin-top: 1.5rem;
 }
 .article-text-p{
     color: #54585a;                /*ESTE COLOR NO ESTÁ EN LOS ESTILOS PERO SÍ EN LA VERSIÓN MÓVIL*/
@@ -155,14 +155,16 @@ font-family: 'Rubik', sans-serif;
     font-size: 1.6rem;
     font-weight: normal;
     line-height: 1.5;
-    margin: 1rem 0 1.5rem;              /*ME PIDE 60px MARGIN-TOP, ES MUCHO, NO CONCUERDA CON EL EJEMPLO*/
-    width: 29rem;                        /*EN ZEPLIN ESPECIFICA ESTE WIDTH, PERO ES RESPONSIVE ASÍ?*/
+    margin: 1rem 0 1.5rem;              /*ME PIDE 60px MARGIN-TOP, ES MUCHO, NO CONCUERDA CON EL EJEMPLO, esto entra en conflicto
+                                          con el otro margin*/
 }
 .icons-list {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    /*124px*/
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: var(--blue-green);
 }
 
 /*FOOTER*/
