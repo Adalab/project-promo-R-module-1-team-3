@@ -134,8 +134,65 @@ font-family: 'Rubik', sans-serif;
 }
 /*--------fin TEAM--------*/
 
-/*ABOUT US*/
+/*-----------------------ABOUT US---------------------------*/
+.about-us-h2 {
+    color: var(--blue-green);
+    font-size: 2.4rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    line-height: 1.88;
+    margin-top: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.about-us-article {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 3rem;
+}
+.article-figure {
+    width: 18rem;
+    height: 18rem;
+    background-color: var(--cool-grey);
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article-figure__image {
+    width: 95%;
+    height: 95%;
+    border-radius: 5%;
 
+}
+.article-text{
+    text-align: center;
+    margin-top: 1.5rem;
+}
 
+.article-text-h3{
+    color: var(--black);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    line-height: 2.25;
+    margin-top: 1.5;
+}
+.article-text-p{
+    color: #54585a;                /*ESTE COLOR NO ESTÁ EN LOS ESTILOS PERO SÍ EN LA VERSIÓN MÓVIL*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 1rem 0 1.5rem;              /*ME PIDE 60px MARGIN-TOP, ES MUCHO, NO CONCUERDA CON EL EJEMPLO*/
+    width: 29rem;                        /*EN ZEPLIN ESPECIFICA ESTE WIDTH, PERO ES RESPONSIVE ASÍ?*/
+}
+.icons-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /*124px*/
+}
 
 /*FOOTER*/
