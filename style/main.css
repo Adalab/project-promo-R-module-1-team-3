@@ -156,7 +156,7 @@ font-family: 'Rubik', sans-serif;
     font-weight: normal;
     line-height: 1.5;
     margin: 1rem 0 1.5rem;              /*ME PIDE 60px MARGIN-TOP, ES MUCHO, NO CONCUERDA CON EL EJEMPLO*/
-    width: 29rem;
+    width: 29rem;                        /*EN ZEPLIN ESPECIFICA ESTE WIDTH, PERO ES RESPONSIVE ASÍ?*/
 }
 .icons-list {
     display: flex;
