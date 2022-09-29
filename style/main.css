@@ -67,14 +67,6 @@ font-family: 'Rubik', sans-serif;
 }
 
 
-/*eliminar despues
-.team, .team-container-white,.team-container-grey, .team-square {
-    border:1px solid red;
-}
-.team {
-    background-color: black;
-}
-*/
 /*--caja1--*/
 
 .team-container-white {
@@ -87,9 +79,9 @@ font-family: 'Rubik', sans-serif;
     color: var(--aqua);
     font-family: 'Rubik', sans-serif; /*DUDA:como se si esta cogiendo medium?*/
     font-size:2.4rem;
-   /* border: 0.5px solid orange;!QUITAR*/
+
 }
-/*--caja2---*/
+/*caja2 (esta dentro de caja1)*/
 .team-square {
     width:30px;
     height: 30px;
@@ -108,9 +100,7 @@ font-family: 'Rubik', sans-serif;
     color: var(--blue-green);
     font-family: 'Rubik', sans-serif; /*DUDA:como se si esta cogiendo medium?*/
     font-size:2.2rem;
-    /*
-    border: 0.5px solid orange;
-   !QUITAR*/
+
 }
 /*--------fin TEAM--------*/
 
