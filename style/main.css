@@ -1,4 +1,4 @@
-* {
+html {
     font-size: 62.5%;
 }
 /* 1 Rem son 10 px*/
@@ -25,7 +25,7 @@ font-family: 'Rubik', sans-serif;
 /*HEADER*/
 
 .header {
-    background-color:pink;
+    background-color:blue;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -40,15 +40,71 @@ font-family: 'Rubik', sans-serif;
 
 
 
-/*TEAM*/
+/*--------TEAM--------*/
+
+/*afecta a todas */
+
+.container {
+    margin-left:2%;
+    margin-right:2%;
+}
+
+.team .container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.team-article {
+    display:flex;
+    flex-direction: column;
+    margin-top:10%;
+    margin-bottom:10%;
+    gap:2rem; 
+}
+.team-p {
+    font-size: 1.6rem;
+}
 
 
+/*--caja1--*/
 
+.team-container-white {
+    background-color: var(--white);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-h2 {
+    color: var(--aqua);
+    font-family: 'Rubik', sans-serif; /*DUDA:como se si esta cogiendo medium?*/
+    font-size:2.4rem;
 
+}
+/*caja2 (esta dentro de caja1)*/
+.team-square {
+    width:30px;
+    height: 30px;
+    transform:translate(0,50%) rotate(45deg);
+    z-index: 1;
+    background-color: var(--white);
+}
+
+/*--caja3--*/
+
+.team-container-grey {
+    background-color: var(--cool-grey);
+    
+}
+.team-h3 {
+    color: var(--blue-green);
+    font-family: 'Rubik', sans-serif; /*DUDA:como se si esta cogiendo medium?*/
+    font-size:2.2rem;
+
+}
+/*--------fin TEAM--------*/
 
 /*ABOUT US*/
-
-
 
 
 
