@@ -34,6 +34,7 @@ font-family: 'Rubik', sans-serif;
 /* hablado Product-owner Ivan: márgenes con medidas abolutas
 pixels.*/
 
+
 /*HEADER*/
 
 .header {
@@ -75,38 +76,33 @@ pixels.*/
 /*HERO*/
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 421px;  
+  margin-bottom: 46px;
+  /*color | image | repeat | attachment | position*/
+  background: var(--aqua) url(../images/hero-image.jpg) no-repeat scroll center;
+  background-size: cover;
+
+}
+
+.hero-p {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.39;
   color: var(--black);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 362px;
-}
-
-.hero-image {
-  height: 316px;
-  /* width: 100%; como el el 100% no hace falta*/
-  /*color image repeat attachment position*/
-  background: var(--aqua) url(../images/hero-image.jpg) no-repeat scroll center;
-  background-size: cover;
-}
-
-.hero-p {
-
   background-color: var(--white);
-  width: 260px;
-  margin-top: -34px;
+  transform: translateY(46px);
+  margin-left: 15px;
+  margin-right: 15px;
   /* top | right | bottom | left */
   padding: 14px 15px 16px 15px;
 }
 
 /*--------TEAM--------*/
-
-/*afecta a todas */
 
 
 .team .container {
@@ -118,12 +114,14 @@ pixels.*/
 .team-article {
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  gap: 2rem;
+  margin-top: 30px;
+  margin-bottom: 45px;
 }
 .team-p {
   font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  color:var(--gunmetal);
 }
 
 /*--caja1--*/
@@ -136,9 +134,15 @@ pixels.*/
 }
 .team-h2 {
   color: var(--aqua);
-  font-family: "Rubik", sans-serif; /*DUDA:como se si esta cogiendo medium?*/
+  font-family: "Rubik", sans-serif; 
   font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.88;
 }
+.team-container-white .team-article {
+  gap: 15px;
+}
+
 /*caja2 (esta dentro de caja1)*/
 .team-square {
   width: 30px;
@@ -155,9 +159,12 @@ pixels.*/
 }
 .team-h3 {
   color: var(--blue-green);
-  font-family: "Rubik", sans-serif; /*DUDA:como se si esta cogiendo medium?*/
+  font-family: "Rubik", sans-serif; 
   font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2.05;
 }
+
 /*--------fin TEAM--------*/
 
 /*-----------------------ABOUT US---------------------------*/
