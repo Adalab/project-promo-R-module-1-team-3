@@ -18,12 +18,21 @@ body {
   --blue-green: #099d8d;
   --white: #fff;
   --cool-grey: #b8b8b9;
+  --gunmetal:#54585a;
 }
 
 /*
 font-family: 'Open Sans', sans-serif;
 font-family: 'Rubik', sans-serif;
 */
+
+.container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* hablado Product-owner Ivan: márgenes con medidas abolutas
+pixels.*/
 
 /*HEADER*/
 
@@ -71,9 +80,6 @@ font-family: 'Rubik', sans-serif;
   font-weight: 600;
   line-height: 1.39;
   color: var(--black);
-}
-
-.hero .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,13 +89,14 @@ font-family: 'Rubik', sans-serif;
 
 .hero-image {
   height: 316px;
-  width: 100%;
+  /* width: 100%; como el el 100% no hace falta*/
   /*color image repeat attachment position*/
   background: var(--aqua) url(../images/hero-image.jpg) no-repeat scroll center;
   background-size: cover;
 }
 
 .hero-p {
+
   background-color: var(--white);
   width: 260px;
   margin-top: -34px;
@@ -101,10 +108,6 @@ font-family: 'Rubik', sans-serif;
 
 /*afecta a todas */
 
-.container {
-  margin-left: 2%;
-  margin-right: 2%;
-}
 
 .team .container {
   display: flex;
