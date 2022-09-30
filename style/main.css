@@ -75,31 +75,28 @@ pixels.*/
 /*HERO*/
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 421px;  
+  margin-bottom: 46px;
+  /*color | image | repeat | attachment | position*/
+  background: var(--aqua) url(../images/hero-image.jpg) no-repeat scroll center;
+  background-size: cover;
+
+}
+
+.hero-p {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.39;
   color: var(--black);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 362px;
-}
-
-.hero-image {
-  height: 316px;
-  /* width: 100%; como el el 100% no hace falta*/
-  /*color image repeat attachment position*/
-  background: var(--aqua) url(../images/hero-image.jpg) no-repeat scroll center;
-  background-size: cover;
-}
-
-.hero-p {
-
   background-color: var(--white);
-  width: 260px;
-  margin-top: -34px;
+  transform: translateY(46px);
+  margin-left: 15px;
+  margin-right: 15px;
   /* top | right | bottom | left */
   padding: 14px 15px 16px 15px;
 }
