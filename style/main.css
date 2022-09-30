@@ -232,7 +232,8 @@ pixels.*/
 
 /*FOOTER*/
 .footer{
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+  border: 1px solid var(--cool-grey);
   height: 250px;
   background-color: white;
   display: flex;
