@@ -54,6 +54,7 @@ pixels.*/
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 .nav {
   background-color: var(--aqua);
@@ -61,6 +62,7 @@ pixels.*/
   display: flex;
   flex-direction: column;
   justify-content: center;
+  opacity: 0.90;
 }
 .list-nav {
   display: flex;
@@ -71,6 +73,7 @@ pixels.*/
   color: var(--white);
   font-size: 1.5rem;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /*HERO*/
@@ -88,7 +91,7 @@ pixels.*/
 
 }
 
-.hero-p {
+.hero-h2 {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
@@ -132,7 +135,7 @@ pixels.*/
   flex-direction: column;
   align-items: center;
 }
-.team-h2 {
+.team-h3 {
   color: var(--aqua);
   font-family: "Rubik", sans-serif; 
   font-size: 2.4rem;
@@ -155,15 +158,28 @@ pixels.*/
 /*--caja3--*/
 
 .team-container-grey {
-  background-color: var(--cool-grey);
+  background-color:  rgba(184, 184, 185, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  /*no se usa variable para poder aplicar opacidad RGBA*/
+
 }
-.team-h3 {
+.team-h4 {
   color: var(--blue-green);
   font-family: "Rubik", sans-serif; 
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 2.05;
 }
+/*OJO QUITAR EL MARGIN TOP DE DEBILIDADES!!!!!!!!!!!!!
+.weakness {
+  margin-top: 0;
+  padding-top:0;
+}*/
 
 /*--------fin TEAM--------*/
 
@@ -171,13 +187,13 @@ pixels.*/
 .about-us{
   background-color: var(--white);
 }
-.about-us-h2 {
+.about-us-h3 {
   color: var(--blue-green);
   font-size: 2.4rem;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
   line-height: 1.88;
-  margin-top: 30px;
+  margin: 30px 0 30px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -185,7 +201,7 @@ pixels.*/
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 0;
 }
 .article-figure {
     width: 180px;
@@ -204,10 +220,10 @@ pixels.*/
 }
 .article-text {
   text-align: center;
-  margin: 15px 15px 45px;
+  margin: 0px 0 45px;
 }
 
-.article-text-h3{
+.article-text-h4{
     color: var(--black);
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
@@ -231,14 +247,16 @@ pixels.*/
     color: var(--blue-green);
     margin-top: 15px;
 }
-.icon-dots{
+.icon-dots::after { 
+  content: " ·" ;
   color: var(--gunmetal);
-}
+  font-size: 1.88rem;
+  padding-left:4px;}
 
 /*FOOTER*/
 .footer{
   box-sizing: border-box;
-  border: 1px solid var(--cool-grey);
+  border-top: 1px solid var(--cool-grey);
   height: 250px;
   background-color: white;
   display: flex;
@@ -253,6 +271,7 @@ pixels.*/
   margin-top: 30px;
   justify-content: center;
   align-items: center;
+  text-transform: capitalize;
 }
 .footer-list{
   display: flex;
@@ -272,6 +291,7 @@ pixels.*/
   font-size: 1.4rem; 
   text-decoration: none;
   justify-content: center;
+  text-transform: uppercase;
 }
 .footer-logo{
   justify-content: center;
