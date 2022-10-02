@@ -31,7 +31,7 @@ font-family: 'Rubik', sans-serif;
   margin-right: 15px;
 }
 
-/* hablado conj Product-owner Ivan: márgenes con medidas abolutas
+/* hablado con Product-owner Ivan: márgenes con medidas abolutas
 pixels.*/
 
 
@@ -42,7 +42,8 @@ pixels.*/
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-family: "Rubik-Medium", sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
   color: var(--white);
   background-color: var(--blue-green);
   opacity: 0.95;
