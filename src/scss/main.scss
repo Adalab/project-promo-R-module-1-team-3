@@ -91,9 +91,8 @@ html {
   
   .hero {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
     height: 421px;  
     margin-bottom: 46px;
     /*color | image | repeat | attachment | position*/
@@ -113,9 +112,36 @@ html {
     margin-right: 15px;
     /* top | right | bottom | left */
     padding: 14px 15px 16px 15px;
+    text-align: center;
   }
   
-  
+  @media all and (min-width:768px) {
+    .hero{
+      justify-content: flex-start;
+      margin-bottom: 0px;
+    }
+    .hero-h2{
+      transform: none;
+      opacity: 0.8;
+      margin-left: 46px;
+      margin-right: 36.59%;
+          /* top | right | bottom | left */
+      padding: 15px 30px;
+    }
+  }
+
+  @media all and (min-width:1200px) {
+    .hero{
+      height: 550px;
+    }
+    .hero-h2{
+      font-size: 24px;
+      line-height: 1.25;
+      margin-left: 138px;
+      margin-right: 40.67%;
+    }
+  }
+
   /*TEAM*/
   
   .team .container {
@@ -335,5 +361,4 @@ html {
     text-align: center;
     text-transform: uppercase;
   }
-  
   
