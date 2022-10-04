@@ -336,4 +336,47 @@ html {
     text-transform: uppercase;
   }
   
+  /*@media*/
+
+
+  @media all and (min-width: 768px) {
+    /*TEAM*/
+    .container {/*QUITAR*/
+      margin-left: 0px;
+      margin-right: 0px;}
+
+    .team-container-white {
+      margin:0 45px 0 45px;}
+
+    .team-article {
+      margin: 45px 0 60px;}
+
+    .team-container-white .team-article {
+      max-width:  600px;}
+
+    .team-container-white .team-p {
+      opacity: 0.67;}
+    
+    .team-h3 {
+        color: var(--blue-green);}
+
+    .team-container-grey {
+      flex-direction: row;
+      justify-content: center;
+      gap:30px;
+       /* top | right+left | bottom */
+      padding:0 45px 0;}
+
+    .team-container-grey .team-article {
+      gap:15px;}
+
+    .team-container-grey .team-article {
+      max-width:  400px;}
+}
+
+@media all and (min-width: 1200px) {
+  /*TEAM*/
+  .team-container-grey {
+    gap:45px;}
+}
   
