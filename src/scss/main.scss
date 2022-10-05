@@ -282,8 +282,11 @@ html {
       gap: 10px;
       font-size: 1.6rem;
       line-height: 1.88;
-      color: var(--blue-green);
       margin-top: 15px;
+  }
+  .anchor__icon {
+    text-decoration: none;
+    color: var(--blue-green);
   }
   .icon-dots::after { 
     content: " ·" ;
