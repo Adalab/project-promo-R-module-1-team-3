@@ -74,6 +74,9 @@
     .about-us{
       margin-bottom: 30px;
     }
+    .about-us-h3 {
+      margin-bottom: 10px;
+    }
     .about-us-article {
       flex-flow: row nowrap;
       align-items: center;
@@ -87,6 +90,8 @@
     .article-figure {
       width: 205px;
       height: 205px;
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
     .leftImage {
       margin-right: 30px;
@@ -114,5 +119,20 @@
     }
   }
   @media all and (min-width: 1200px){
-    
+    .about-us{
+      margin-left: 130px;
+      margin-right: 130px;
+    }
+    .article-figure {
+      width: 278px;
+      height: 278px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .leftImage {
+      margin-right: 45px;
+    }
+    .rightImage {
+      margin-left: 45px;
+    }
   }
