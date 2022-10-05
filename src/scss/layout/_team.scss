@@ -1,0 +1,117 @@
+.team .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .team-article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .team-p {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color:var(--gunmetal);
+  }
+  
+  /*caja1*/
+  .team-container-white {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-h3 {
+    color: var(--aqua);
+    font-family: "Rubik", sans-serif; 
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.88;
+    text-transform: uppercase;
+  }
+  .team-container-white .team-article {
+    gap: 15px;
+  }
+  .team-article-Pcontainer {
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+  }
+  .team-p {
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color:var(--gunmetal);
+  }
+  
+  
+  /*caja2 (esta dentro de caja1)*/
+  .team-square {
+    width: 30px;
+    height: 30px;
+    transform: translate(0, 50%) rotate(45deg);
+    z-index: 1;
+    background-color: var(--white);
+  }
+  
+  /*caja3*/
+  .team-container-grey {
+    background-color:  rgba(184, 184, 185, 0.2);  /*no se usa variable para poder aplicar opacidad RGBA*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+       /* top | right+left | bottom */
+    padding:0 15px 45px;
+  }
+  .team-h4 {
+    color: var(--blue-green);
+    font-family: "Rubik", sans-serif; 
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 2.05;
+  }
+  
+  @media all and (min-width: 768px) {
+    /*TEAM*/
+    .container {/*QUITAR*/
+      margin-left: 0px;
+      margin-right: 0px;}
+
+    .team-container-white {
+      margin:0 45px 0 45px;}
+
+    .team-article {
+      margin: 45px 0 60px;}
+
+    .team-container-white .team-article {
+      max-width:  600px;}
+
+    .team-container-white .team-p {
+      opacity: 0.67;}
+    
+    .team-h3 {
+        color: var(--blue-green);}
+
+    .team-container-grey {
+      flex-direction: row;
+      justify-content: center;
+      gap:30px;
+       /* top | right+left | bottom */
+      padding:0 45px 0;}
+
+    .team-container-grey .team-article {
+      gap:15px;}
+
+    .team-container-grey .team-article {
+      max-width:  400px;}
+}
+
+@media all and (min-width: 1200px) {
+  /*TEAM*/
+  .team-container-grey {
+    gap:45px;}
+}
+  
