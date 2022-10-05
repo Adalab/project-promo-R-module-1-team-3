@@ -27,12 +27,57 @@
   </head>
   <body class="body">
     <include src="./partials/header.html"></include>
-    <include
-      src="./partials/hero.html"
-      heroClass="hero hero--contact"
-      titleClass="hero__h2 hero__h2--contact"
-    ></include>
+    <main>
+      <include
+        src="./partials/hero.html"
+        heroClass="hero hero--contact"
+        titleClass="hero__h2 hero__h2--contact"
+      ></include>
+      <section>
+        <form class="form">
+          <label class="form__label form__label--required" for="firstName"
+            >Nombre completo</label
+          >
+          <input
+            class="form__input"
+            placeholder="Nombre..."
+            id="firstName"
+            type="text"
+            name="firstName"
+          />
 
+          <label class="form__label form__label--required" for="emailAddress"
+            >Email</label
+          >
+          <input
+            class="form__input"
+            placeholder="nombre.apellidos@mail.com"
+            id="emailAddress"
+            type="email"
+            name="emailAddress"
+          />
+          <label class="form__label" for="telephone">Teléfono</label>
+          <input
+            class="form__input"
+            placeholder="Ej: 123456789"
+            id="telephone"
+            type="tel"
+            name="telephone"
+          />
+          <label class="form__label form__label--required" for="mesage"
+            >Mensaje</label
+          >
+          <input
+            class="form__input form__input--mesage"
+            placeholder="¿Qué necesitas?"
+            id="mesage"
+            type="text"
+            name="mesage"
+          />
+          <input class="form__input--button" type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
     <include src="./partials/footer.html"></include>
   </body>
 </html>
