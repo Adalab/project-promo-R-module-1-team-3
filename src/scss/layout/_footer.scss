@@ -1,4 +1,7 @@
 /*FOOTER*/
+.footer-container{
+  display: none;
+}
   .footer{
     box-sizing: border-box;
     border-top: 1px solid var(--cool-grey);
@@ -10,6 +13,7 @@
     align-items: center;
   }
   .copy{
+    display: inline-block;
     font-family: 'Open Sans', sans-serif;
     color: var(--cool-grey);
     font-size: 1.4rem;
@@ -38,6 +42,7 @@
     text-transform: uppercase;
   }
   .footer-logo{
+    display: inline-block;
     justify-content: center;
      /* top | right | bottom | left */
     margin: 30px 102.1px 45px 102.1px;
@@ -46,8 +51,87 @@
   }
 
   @media all and (min-width: 768px){
-    .copy{
-    
+    .footer-container{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      
     }
+    .footer{
+      padding: 30px 45px 60px;
+      height: 170px;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      
+    }
+    .footer .copy{
+      display: none;
+    }
+    .footer-container .copy{
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+    }
+
+    .footer .footer-logo{ 
+      display: none;
+   }
+    .footer-container .footer-logo{
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+  }
+  // Al tener mayor especificidad podemos ocultar el logo inicial y mostrar el del contenedor
+
+   .footer-list{
+      height: 90px;
+      align-items: flex-end;
+      line-height: 30px;
+      margin: 0;
+    
+   }
+  }
+
+  @media all and (min-width: 768px){
+    .footer-container{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      
+    }
+    .footer{
+      padding: 30px 138px 51px;
+      height: 170px;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      
+    }
+    .footer .copy{
+      display: none;
+    }
+    .footer-container .copy{
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+    }
+
+    .footer .footer-logo{ 
+      display: none;
+   }
+    .footer-container .footer-logo{
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+  }
+  // Al tener mayor especificidad podemos ocultar el logo inicial y mostrar el del contenedor
+
+   .footer-list{
+      height: 90px;
+      align-items: flex-end;
+      line-height: 30px;
+      margin: 0;
+    
+   }
+ 
   }
    
