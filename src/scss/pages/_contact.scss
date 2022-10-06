@@ -1,0 +1,145 @@
+$fontSizeForm:0,87rem;
+$buttonColor:#099d8d;
+$textFont:'Open Sans', sans-serif;
+$textFontContact: "Rubik", sans-serif;
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        &__h3{
+            margin: 30px 95.5px 15px 97.5px;
+            text-transform: uppercase;
+            color: var(--blue-green);
+            font-family: $textFontContact;
+            font-size: 2.4rem;
+            @media all and (min-width: 768px){
+                margin: 30px 319.5px 15px 321.5px;
+            }
+            @media all and (min-width: 1200px){
+                margin: 45px 535.5px 15px 537.5px;
+            }
+        }
+        &__p{
+            box-sizing: border-box;
+            width: 290px;
+            text-align: center;
+            color: var(--gunmetal);
+            font-family: $textFont;
+            line-height: 2.4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media all and (min-width: 768px){
+                width: 442px;
+            }
+            @media all and (min-width: 1200px){
+                width: 601px;
+            }
+         }
+        &__p--p1{
+            font-size: 1.6rem;
+        }
+        &__p--p2{
+            font-size: 1.2rem;
+            margin-top: 30px;
+        }
+        &__p--span{
+            color: var(--aqua);
+        }
+        
+}
+
+.contact2{
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    font-family: $textFont;
+    padding: 58px 15px 60px 15px;
+    font-size: $fontSizeForm;
+    &__label{
+        color: var(--gunmetal);
+        margin-bottom: 7px;
+        &--required::after{
+            content: " *";
+            color:var(--aqua);
+        }
+    }
+    &__input{
+        height: 45px;
+        color: var(--gunmetal);
+        font-family: $textFont;
+        margin-bottom: 13px;
+        padding-left: 15px;
+        border: solid 1px var(--cool-grey);
+        &::placeholder{
+            font-family: $textFont;
+            color: var(--cool-grey);
+            
+        }
+        &--default{
+            color: var(--gunmetal);
+        }
+    }
+    &__input--button{
+        background-color: $buttonColor;
+        height: 45px;
+        border: none;
+        border-radius:4px;
+        color: var(--white);
+        text-transform: uppercase;
+        margin-top: 30px;
+
+        @media all and (min-width: 768px){
+            width: 206px;
+            align-self: flex-end;
+        }
+        @media all and (min-width: 1200px){
+            width: 268px;
+            align-self: flex-end;
+        }
+    }
+    &__textarea{
+        box-sizing: border-box;
+        color: var(--gunmetal);
+        margin-bottom: 13px;
+        padding: 11px 15px;
+        border: solid 1px var(--cool-grey);
+        height: 105px;
+        &::placeholder{
+            font-family: $textFont;
+            color: var(--cool-grey);
+        }
+    }
+    &__wrap{
+        display:flex;
+        flex-direction: column;
+        @media all and (min-width: 1200px){
+            flex-direction: row;
+            gap: 44px;
+            
+        }
+        &--email{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 2;
+        }
+        &--tel{
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+    @media all and (min-width: 768px){
+        width: 442px;
+    }
+    @media all and (min-width: 1200px){
+        width: 601px;
+    }
+    
+}
