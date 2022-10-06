@@ -36,13 +36,25 @@
       <section class="contact">
         <h3 class="contact__h3">contacto</h3>
         <div class="contact__p">
-          <p class="contact__p--p1">Si quieres conocer al equipo un poco mejor o simplemente tienes alguna inquietud o sugerencia no dudes en ponerte en contacto.
-            Rellena este formulario y te contestaremos lo antes posible, o puedes hacer click en nuestras redes sociales en la sección "Quiénes Somos".</p>
-          <p class="contact__p--p2">Todos los campos marcados con <span class="contact__p--span">*</span> son obligatorios.</p>
+          <p class="contact__p--p1">
+            Si quieres conocer al equipo un poco mejor o simplemente tienes
+            alguna inquietud o sugerencia no dudes en ponerte en contacto.
+            Rellena este formulario y te contestaremos lo antes posible, o
+            puedes hacer click en nuestras redes sociales en la sección "Quiénes
+            Somos".
+          </p>
+          <p class="contact__p--p2">
+            Todos los campos marcados con
+            <span class="contact__p--span">*</span> son obligatorios.
+          </p>
         </div>
       </section>
       <section>
-        <form class="form">
+        <form
+          class="form"
+          action="https://formspree.io/f/mdojzvpq"
+          method="POST"
+        >
           <label class="form__label form__label--required" for="firstName"
             >Nombre completo</label
           >
@@ -52,17 +64,19 @@
             id="firstName"
             type="text"
             name="firstName"
+            required
           />
 
           <label class="form__label form__label--required" for="emailAddress"
             >Email</label
           >
           <input
-            class="form__input"
-            placeholder="nombre.apellidos@mail.com"
+            class="form__input form__input--default"
+            value="nombre.apellidos@mail.com"
             id="emailAddress"
             type="email"
             name="emailAddress"
+            required
           />
           <label class="form__label" for="telephone">Teléfono</label>
           <input
@@ -75,13 +89,24 @@
           <label class="form__label form__label--required" for="mesage"
             >Mensaje</label
           >
-          <input
+          <!-- <input
             class="form__input form__input--mesage"
             placeholder="¿Qué necesitas?"
             id="mesage"
             type="text"
             name="mesage"
-          />
+            required
+          /> -->
+
+          <textarea
+            class="form__textarea"
+            name="mesage"
+            id="mesage"
+            cols="30"
+            rows="8"
+            placeholder="¿Qué necesitas?"
+          ></textarea>
+
           <input class="form__input--button" type="submit" value="Enviar" />
         </form>
       </section>

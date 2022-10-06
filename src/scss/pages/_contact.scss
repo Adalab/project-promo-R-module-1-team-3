@@ -67,9 +67,17 @@ $textFontContact: "Rubik", sans-serif;
     }
     &__input{
         height: 45px;
-        color: var(--cool-grey);
+        color: var(--gunmetal);
+        font-family: $textFont;
         margin-bottom: 13px;
         border: solid 1px var(--cool-grey);
+        &::placeholder{
+            font-family: $textFont;
+            color: var(--cool-grey);
+        }
+        &--default{
+            color: var(--gunmetal);
+        }
     }
     &__input--button{
         background-color: $buttonColor;
@@ -80,7 +88,15 @@ $textFontContact: "Rubik", sans-serif;
         text-transform: uppercase;
         margin-top: 30px
     }
-    &__input--mesage{
+    &__textarea{
+        box-sizing: border-box;
+        color: var(--gunmetal);
+        margin-bottom: 13px;
+        border: solid 1px var(--cool-grey);
         height: 105px;
+        &::placeholder{
+            font-family: $textFont;
+            color: var(--cool-grey);
+        }
     }
 }
