@@ -1,8 +1,4 @@
 $fontSizeForm:0,87rem;
-$fontSizeContact12px: 1.2rem;
-$fontSizeContact14px: 1.4rem;
-$fontSizeContact16px: 1.6rem;
-$fontSizeContact24px: 2.4rem;
 $buttonColor:#099d8d;
 $textFont:'Open Sans', sans-serif;
 $textFontContact: "Rubik", sans-serif;
@@ -13,42 +9,47 @@ $textFontContact: "Rubik", sans-serif;
     justify-content: center;
     align-items: center;
         &__h3{
-            margin-top: 30px;
-            justify-content: center;
-            align-items: center;
+            margin: 30px 95.5px 15px 97.5px;
             text-transform: uppercase;
             color: var(--blue-green);
             font-family: $textFontContact;
-            font-size: $fontSizeContact;
+            font-size: 2.4rem;
+            @media all and (min-width: 768px){
+                margin: 30px 319.5px 15px 321.5px;
             }
-
+            @media all and (min-width: 1200px){
+                margin: 45px 535.5px 15px 537.5px;
+            }
+        }
         &__p{
             box-sizing: border-box;
-            margin-top: 15px;
             width: 290px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
             color: var(--gunmetal);
             font-family: $textFont;
             line-height: 2.4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media all and (min-width: 768px){
+                width: 442px;
+            }
+            @media all and (min-width: 1200px){
+                width: 601px;
+            }
          }
         &__p--p1{
-            text-align: center;
-            font-size: $fontSizeContactP1;
+            font-size: 1.6rem;
         }
         &__p--p2{
-            text-align: center;
-            font-size: $fontSizeContactP2; 
-            margin-top: 20px;
-                span{
+            font-size: 1.2rem;
+            margin-top: 30px;
+        }
+        &__p--span{
             color: var(--aqua);
         }
         
-        
 }
-
 
 .form{
     display: flex;
