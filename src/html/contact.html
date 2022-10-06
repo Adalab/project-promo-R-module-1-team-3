@@ -49,7 +49,7 @@
           </p>
         </div>
       </section>
-      <section>
+      <section class="contact2">
         <form
           class="form"
           action="https://formspree.io/f/mdojzvpq"
@@ -66,26 +66,34 @@
             name="firstName"
             required
           />
+          <div class="form__wrap">
+            <div class="form__wrap--email">
+              <label
+                class="form__label form__label--required"
+                for="emailAddress"
+                >Email</label
+              >
+              <input
+                class="form__input form__input--default"
+                value="nombre.apellidos@mail.com"
+                id="emailAddress"
+                type="email"
+                name="emailAddress"
+                required
+              />
+            </div>
+            <div class="form__wrap--tel">
+              <label class="form__label" for="telephone">Teléfono</label>
+              <input
+                class="form__input"
+                placeholder="Ej: 123456789"
+                id="telephone"
+                type="tel"
+                name="telephone"
+              />
+            </div>
+          </div>
 
-          <label class="form__label form__label--required" for="emailAddress"
-            >Email</label
-          >
-          <input
-            class="form__input form__input--default"
-            value="nombre.apellidos@mail.com"
-            id="emailAddress"
-            type="email"
-            name="emailAddress"
-            required
-          />
-          <label class="form__label" for="telephone">Teléfono</label>
-          <input
-            class="form__input"
-            placeholder="Ej: 123456789"
-            id="telephone"
-            type="tel"
-            name="telephone"
-          />
           <label class="form__label form__label--required" for="mesage"
             >Mensaje</label
           >
