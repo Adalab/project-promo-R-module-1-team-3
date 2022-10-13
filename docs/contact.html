@@ -28,7 +28,9 @@
   </head>
   <body class="body">
     <header class="header">
-      <h1 class="header-title">Guerreras del front</h1>
+      <a class="header-title" href="./index.html"
+        ><h1 class="header-title-text">Guerreras del front</h1></a
+      >
       <nav class="nav">
         <ul class="list-nav">
           <li>
@@ -38,7 +40,7 @@
             <a class="nav-link" href="./index.html#about-us">quiénes somos</a>
           </li>
           <li>
-            <a class="nav-link" href="./contact.html" target="_blank">contacto</a>
+            <a class="nav-link" href="./contact.html">contacto</a>
           </li>
         </ul>
       </nav>
@@ -95,6 +97,7 @@
                 id="emailAddress"
                 type="email"
                 name="emailAddress"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 required
               />
             </div>
@@ -106,6 +109,7 @@
                 id="telephone"
                 type="tel"
                 name="telephone"
+                pattern="[0-9]{9}"
               />
             </div>
           </div>
@@ -113,15 +117,6 @@
           <label class="form__label form__label--required" for="mesage"
             >Mensaje</label
           >
-          <!-- <input
-            class="form__input form__input--mesage"
-            placeholder="¿Qué necesitas?"
-            id="mesage"
-            type="text"
-            name="mesage"
-            required
-          /> -->
-
           <textarea
             class="form__textarea"
             name="mesage"
@@ -129,6 +124,7 @@
             cols="30"
             rows="8"
             placeholder="¿Qué necesitas?"
+            maxlength="500"
           ></textarea>
 
           <input class="form__input--button" type="submit" value="Enviar" />

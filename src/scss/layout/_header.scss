@@ -11,12 +11,19 @@
     position: absolute;
     top: 0;
   }
-  .header-title {
+  .header-title{
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color:var(--white);
+  }
+
+.header-title-text{
     text-transform: uppercase;
+    text-decoration: none;
+    color:var(--white);
   }
   .nav {
     background-color: var(--aqua);
